@@ -1,0 +1,155 @@
+$date
+	Sat Jul 12 21:06:42 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_comparator_2bit $end
+$var wire 1 ! A_lt_B $end
+$var wire 1 " A_gt_B $end
+$var wire 1 # A_eq_B $end
+$var reg 2 $ A [1:0] $end
+$var reg 2 % B [1:0] $end
+$var integer 32 & i [31:0] $end
+$var integer 32 ' j [31:0] $end
+$scope module uut $end
+$var wire 2 ( A [1:0] $end
+$var wire 1 # A_eq_B $end
+$var wire 1 " A_gt_B $end
+$var wire 1 ! A_lt_B $end
+$var wire 2 ) B [1:0] $end
+$var wire 1 * eq0 $end
+$var wire 1 + eq1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1+
+1*
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+1#
+0"
+0!
+$end
+#10000
+1!
+0#
+0*
+b1 %
+b1 )
+b1 '
+#20000
+0+
+1*
+b10 %
+b10 )
+b10 '
+#30000
+0*
+b11 %
+b11 )
+b11 '
+#40000
+1"
+1+
+0!
+b0 %
+b0 )
+b1 $
+b1 (
+b1 &
+b0 '
+#50000
+0"
+1#
+1*
+b1 %
+b1 )
+b1 '
+#60000
+0"
+0#
+0+
+0*
+1!
+b10 %
+b10 )
+b10 '
+#70000
+1*
+b11 %
+b11 )
+b11 '
+#80000
+1"
+0!
+b0 %
+b0 )
+b10 $
+b10 (
+b10 &
+b0 '
+#90000
+0*
+b1 %
+b1 )
+b1 '
+#100000
+0"
+1#
+1+
+1*
+b10 %
+b10 )
+b10 '
+#110000
+1!
+0#
+0*
+b11 %
+b11 )
+b11 '
+#120000
+1"
+0!
+0+
+b0 %
+b0 )
+b11 $
+b11 (
+b11 &
+b0 '
+#130000
+1*
+b1 %
+b1 )
+b1 '
+#140000
+1"
+1+
+0*
+b10 %
+b10 )
+b10 '
+#150000
+0"
+1#
+1*
+b11 %
+b11 )
+b11 '
+#160000
+b100 &
+b100 '

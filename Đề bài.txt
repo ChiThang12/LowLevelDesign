@@ -1,0 +1,31 @@
+🔟 Đề bài thiết kế low-level cho người mới:
+1. Thiết kế mạch Half Adder
+Vẽ sơ đồ cổng logic và biểu diễn bảng chân lý cho mạch cộng 1 bit không nhớ (half adder). Sau đó viết RTL (Verilog) tương ứng.
+
+2. Thiết kế Full Adder từ 2 Half Adder
+Vẽ low-level diagram (cổng AND, OR, XOR) cho Full Adder sử dụng 2 Half Adder. Viết mô tả logic cổng và kiểm tra bằng bảng chân lý.
+
+3. Thiết kế mạch 4-bit Ripple Carry Adder
+Thiết kế sơ đồ các khối Full Adder nối tiếp nhau để tạo thành một bộ cộng 4 bit. Ghi rõ kết nối tín hiệu Carry giữa các khối.
+
+4. Thiết kế MUX 4:1 bằng cổng logic cơ bản
+Dùng AND, OR, NOT để thiết kế một bộ chọn 4:1. Vẽ sơ đồ cổng chi tiết và viết mô tả chức năng.
+
+5. Thiết kế D Flip-Flop từ cổng NAND
+Vẽ sơ đồ cổng NAND để tạo ra mạch D Flip-Flop (Edge-triggered), phân tích hoạt động từng pha xung clock.
+
+6. Thiết kế mạch đồng hồ chia tần số
+Dùng T Flip-Flop hoặc D Flip-Flop để tạo mạch chia tần số xung clock ban đầu thành 1/2, 1/4, 1/8,...
+
+7. Thiết kế mạch phát hiện số chẵn (Even Detector)
+Nhận vào 4 bit, đầu ra là 1 nếu số đầu vào là chẵn. Dùng các cổng XOR, AND để phát hiện bit cuối.
+
+8. Thiết kế Comparator 2-bit
+So sánh 2 số 2 bit (A và B). Đầu ra có 3 tín hiệu: A > B, A = B, A < B. Thiết kế bằng cổng logic.
+
+9. Thiết kế bộ mã hóa (Encoder) 8:3
+Nhận vào một trong 8 tín hiệu (1-hot), xuất ra mã nhị phân 3 bit. Vẽ sơ đồ logic.
+
+10. Thiết kế Finite State Machine (FSM) đơn giản
+Ví dụ: Thiết kế FSM nhận chuỗi nhị phân và phát hiện chuỗi “1011”. Vẽ sơ đồ trạng thái và biểu diễn từng phần bằng cổng logic.
+
