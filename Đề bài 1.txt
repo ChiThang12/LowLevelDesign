@@ -1,0 +1,73 @@
+1. Thiết kế mạch cộng trừ 4-bit
+Đầu vào: A[3:0], B[3:0], SUB (nếu SUB=1 thì thực hiện A-B).
+Đầu ra: SUM[3:0], Carry/Borrow.
+Yêu cầu: Dùng XOR để tạo bộ đảo bit điều khiển, và Full Adder 4 bit.
+
+2. Thiết kế ALU đơn giản 4 chức năng
+Đầu vào: A[3:0], B[3:0], Sel[1:0]
+
+Chức năng:
+
+00: A + B
+
+01: A - B
+
+10: A & B
+
+11: A | B
+
+Đầu ra: Result[3:0], Zero, Carry
+
+Dùng các cổng logic và mô hình hóa trên Verilog.
+
+3. Thiết kế mạch chuyển đổi nhị phân sang BCD (Binary to BCD)
+Nhận đầu vào 4-bit nhị phân.
+
+Xuất ra BCD dạng 2 số: Tens, Ones.
+
+Dùng phương pháp Double Dabble (Shift + Add-3).
+
+4. Thiết kế mạch Shift Register 4-bit
+Dùng D Flip-Flop.
+
+Chức năng: Shift trái, shift phải, load song song.
+
+Đầu vào: clk, rst, serial_in, parallel_in[3:0], mode[1:0].
+
+5. Thiết kế Counter đồng bộ 4-bit
+Đầu vào: clk, rst, enable
+
+Đầu ra: count[3:0]
+
+Phát triển lên counter đếm lên/xuống có điều khiển UPDN.
+
+6. Thiết kế bộ giải mã 3:8 (Decoder 3:8)
+Đầu vào: A[2:0]
+
+Đầu ra: 8 đường, chỉ có 1 đường là 1 tại 1 thời điểm.
+
+Dùng AND, NOT. Có thể thêm ngõ cho phép (Enable).
+
+7. Thiết kế RAM nhỏ 4x4 (4 địa chỉ, mỗi ô 4 bit)
+Dùng mảng register trong Verilog.
+
+Có write_enable, read_enable, addr, data_in, data_out.
+
+8. Thiết kế mạch điều khiển LED chạy (LED Chaser)
+8 LED, sáng dần từ trái sang phải rồi quay lại.
+
+Dùng shift register và điều khiển bằng clock divider.
+
+9. Thiết kế bộ nhân nhị phân 4-bit
+Nhân A[3:0] với B[3:0]
+
+Dùng phương pháp dịch và cộng từng bước (shift-and-add multiplier).
+
+Không dùng phép nhân * trực tiếp trong Verilog.
+
+10. Thiết kế FSM điều khiển traffic light 3 trạng thái
+Trạng thái: Green → Yellow → Red → Green...
+
+Dùng clock chia chu kỳ để mô phỏng thời gian mỗi đèn.
+
+Áp dụng kiểu mô hình Mealy hoặc Moore FSM.
