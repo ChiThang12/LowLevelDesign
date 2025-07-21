@@ -1,24 +1,20 @@
-module d_flip_flop(
+module d_flip_flop_ms(
     input D,
-    input CLK,
+    input clk,
+    input R,
     output Q,
     output Qn
 );
 
-    wire Dn,S1,R1,S2,R2;
-    wire Qm,Qmn;
+    wire Dn, S1, R1, S2, R2;
+    wire Qm, Qmn;
 
-   // Master latch
-   not (Dn,D);
-   nand (S1, D ,CLK);
-   nand (R1, Dn,CLK);
-   nand (Qm, S1,Qmn);
-   nand (Qmn,R1,Qm);
+    // master latch
 
-   // Slave latch
-   nand (S2, Qm ,~CLK);
-   nand (R2, Qmn,~CLK);
-   nand (Q , S2 ,Qn);
-   nand (Qn, R2 ,Q);
+    wire d_reset_applied;
+    assign d_reset_applied = D & (~R);
 
+    not(d_reset_applied, d_reset_applied);
+    nand(S1,d_reset_applied,clk);
+    nand(R1,)
 endmodule

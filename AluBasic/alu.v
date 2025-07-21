@@ -219,7 +219,7 @@ module sub(
 
     genvar i;
     generate 
-        for(i=0; i<4; i=i+1) begin
+        for(i=0; i<4; i=i+1) begin : sub
             assign b_n[i] = b[i] ^ 1'b1;
         end
     endgenerate
