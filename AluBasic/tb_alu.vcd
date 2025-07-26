@@ -1,5 +1,5 @@
 $date
-	Mon Jul 14 20:45:46 2025
+	Sat Jul 26 12:17:29 2025
 $end
 $version
 	Icarus Verilog
@@ -263,16 +263,16 @@ $var wire 1 - c_out $end
 $var wire 1 P" c $end
 $var wire 4 Q" b_n [3:0] $end
 $var wire 4 R" b_in [3:0] $end
-$scope begin genblk1[0] $end
+$scope begin sub[0] $end
 $var parameter 2 S" i $end
 $upscope $end
-$scope begin genblk1[1] $end
+$scope begin sub[1] $end
 $var parameter 2 T" i $end
 $upscope $end
-$scope begin genblk1[2] $end
+$scope begin sub[2] $end
 $var parameter 3 U" i $end
 $upscope $end
-$scope begin genblk1[3] $end
+$scope begin sub[3] $end
 $var parameter 3 V" i $end
 $upscope $end
 $scope module add1 $end
